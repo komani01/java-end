@@ -69,7 +69,7 @@ public class Account  implements Serializable{
 	@JsonIgnore
 	@OneToMany(mappedBy = "account")
 	List<History> histories;
-
+	//Comment trash
 	@JsonIgnore
 	@OneToMany(mappedBy = "account", fetch = FetchType.EAGER, cascade = CascadeType.ALL)  
 	// FetchType.EAGER cho phép được tải về dữ liệu khi dữ liệu mẹ được tải xong FetchType.LAZY ko cần tải cho những trường ko cần thiết
